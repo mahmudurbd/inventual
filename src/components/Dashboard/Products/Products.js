@@ -14,7 +14,7 @@ const Products = () => {
   console.log(products);
 
   useEffect( ()=> {
-    fetch('http://localhost:5000/products')
+    fetch('https://thawing-lowlands-19120.herokuapp.com/products')
     .then(response => response.json())
     .then(data => setProducts(data))
   },[])
@@ -33,7 +33,7 @@ const Products = () => {
 
   // handle
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/products/${id}`,{
+    fetch(`https://thawing-lowlands-19120.herokuapp.com/products/${id}`,{
       method: 'DELETE'
     })
     .then(res => res.json())
@@ -77,7 +77,7 @@ const Products = () => {
     console.log(addproduct);
 
     //send to server
-    fetch('http://localhost:5000/products',{
+    fetch('https://thawing-lowlands-19120.herokuapp.com/products',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

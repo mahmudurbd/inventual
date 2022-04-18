@@ -6,7 +6,7 @@ const GridItem = (props) => {
     const {product_name,image,price,quantity,_id} = props.product;
     const [products, setProducts] = useState([]);
     const handleDelete = (id) => {
-      fetch(`http://localhost:5000/products/${id}`,{
+      fetch(`https://thawing-lowlands-19120.herokuapp.com/products/${id}`,{
       method: 'DELETE'
 
     })

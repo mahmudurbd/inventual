@@ -11,7 +11,7 @@ const GridView = () => {
   console.log(products);
 
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://thawing-lowlands-19120.herokuapp.com/products')
     .then(res => res.json())
     .then(data => setProducts(data))
   },[])
@@ -33,7 +33,7 @@ const handleAddProduct = (e) => {
   console.log(addproduct);
 
   //send to server
-  fetch('http://localhost:5000/products',{
+  fetch('https://thawing-lowlands-19120.herokuapp.com/products',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
