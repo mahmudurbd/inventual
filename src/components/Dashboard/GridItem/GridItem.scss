@@ -1,0 +1,20 @@
+.view-btn{
+    padding: 5px 15px;
+    border: 1px solid #A1C1FF;
+    background-color: #A1C1FF;
+
+    &:hover{
+        background-color: whitesmoke;
+    }
+}
+
+.grid-delete-btn{
+    padding: 5px 15px;
+    border: 1px solid #A1C1FF;
+    background-color: whitesmoke;
+
+    &:hover{
+        color: white;
+        background-color: crimson;
+    }
+}

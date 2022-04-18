@@ -1,0 +1,90 @@
+.products{
+    .add-btn{
+        margin-left: 50px;
+    }
+    .modal-custom{
+        margin-top: 100px;
+    }
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+}
+.grid-tabular-wrapper{
+    display: flex;
+
+    .grid{
+        margin-right: 10px;
+    }
+    .tabular{
+        margin-right: 50px;
+    }
+}
+
+.products-table{
+    height: 100vh;
+
+    .product-action{
+        .edit-btn{
+            cursor: pointer;
+            margin-left: 20px;
+            
+            font-size: 20px;
+        }
+        .delete-btn{
+            cursor: pointer;
+            margin-left: 20px;
+            color: crimson;
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-custom{
+        width: 300px;
+        margin:0 auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .products{
+        .add-btn{
+            margin-left: 0px;
+        }
+    }
+    
+    .view{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .products{
+        .add-btn{
+            margin-left: 0px;
+        }
+    }
+    .modal-custom{
+        margin-left : 50px;
+    }
+    .view{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-tabular-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .grid{
+            margin-right: 0px;
+        }
+        .tabular{
+            margin-right: 0px;
+        }
+    }
+    
+}
+

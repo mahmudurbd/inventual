@@ -1,0 +1,23 @@
+.user-icon{
+    margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+    .menu-icon{
+        margin-right: 0;
+    }
+    .dashboard-logo{
+        font-size: 14px !important;
+    }
+    .user-name{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dashboard-logo{
+        font-size: 12px !important;
+    }
+    .user-name{
+        font-size: 10px;
+    }
+}
