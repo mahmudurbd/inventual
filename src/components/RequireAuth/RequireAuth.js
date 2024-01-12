@@ -7,7 +7,7 @@ const RequireAuth = ({children}) => {
     const {user} = useAuth();
     let location = useLocation();
 
-    if(!user.email){
+    /* if(!user.email){
         return <Navigate to="/" state={{ from: location }} replace />;
     }
     
@@ -15,7 +15,8 @@ const RequireAuth = ({children}) => {
         
             {children}
         
-    );
+    ); */
+     return user.email ? children : <Navigate to="/login" state={{ from: location }} replace/>;
 };
 
 export default RequireAuth;

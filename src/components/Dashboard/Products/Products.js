@@ -76,7 +76,7 @@ const Products = () => {
     const addproduct = {...product};
     console.log(addproduct);
 
-    //send to server
+    //send to server data
     fetch('https://thawing-lowlands-19120.herokuapp.com/products',{
       method: 'POST',
       headers: {
@@ -97,9 +97,7 @@ const Products = () => {
         )
         window.location.reload();
       }
-    })
-
-    
+    })  
   }
 
 const columns = [
@@ -182,6 +180,7 @@ const columns = [
         </div>
         </div>
         <div className='products-table shadow-lg p-5'>
+          
         <Search onChange={(e) => setSearchTerm(e.target.value)} placeholder="input search text"  enterButton />
         
             <DataGrid
