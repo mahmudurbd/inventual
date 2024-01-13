@@ -6,7 +6,7 @@ const GridItem = (props) => {
     const {product_name,image,price,quantity,_id} = props.product;
     const [products, setProducts] = useState([]);
     const handleDelete = (id) => {
-      fetch(`https://thawing-lowlands-19120.herokuapp.com/products/${id}`,{
+      fetch(`https://inventual-server.vercel.app/products/${id}`,{
       method: 'DELETE'
 
     })

@@ -14,7 +14,7 @@ const Products = () => {
   console.log(products);
 
   useEffect( ()=> {
-    fetch('https://thawing-lowlands-19120.herokuapp.com/products')
+    fetch('https://inventual-server.vercel.app/products')
     .then(response => response.json())
     .then(data => setProducts(data))
   },[])
@@ -33,7 +33,7 @@ const Products = () => {
 
   // handle
   const handleDelete = (id) => {
-    fetch(`https://thawing-lowlands-19120.herokuapp.com/products/${id}`,{
+    fetch(`https://inventual-server.vercel.app/products/${id}`,{
       method: 'DELETE'
     })
     .then(res => res.json())
@@ -77,7 +77,7 @@ const Products = () => {
     console.log(addproduct);
 
     //send to server data
-    fetch('https://thawing-lowlands-19120.herokuapp.com/products',{
+    fetch('https://inventual-server.vercel.app/products',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
